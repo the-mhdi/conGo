@@ -70,18 +70,18 @@ var (
 	GAS      = "5A" //2	. => gasRemaining
 	JUMPDEST = "5B" //1			mark valid jump destination
 	//5C-5F	invalid
-	PUSH1  = "60" //3	. => uint8		push 1-byte value onto stack
-	PUSH2  = "61" //3	. => uint16		push 2-byte value onto stack
-	PUSH3  = "62" //3	. => uint24		push 3-byte value onto stack
-	PUSH4  = "63" //3	. => uint32		push 4-byte value onto stack
-	PUSH5  = "64" //3	. => uint40		push 5-byte value onto stack
-	PUSH6  = "65" //3	. => uint48		push 6-byte value onto stack
-	PUSH7  = "66" //3	. => uint56		push 7-byte value onto stack
-	PUSH8  = "67" //3	. => uint64		push 8-byte value onto stack
-	PUSH9  = "68" //3	. => uint72		push 9-byte value onto stack
-	PUSH10 = "69" //3	. => uint80		push 10-byte value onto stack
-	PUSH11 = "6A" //3	. => uint88		push 11-byte value onto stack
-	PUSH12 = "6B" //3	. => uint96		push 12-byte value onto stack
+	PUSH1  = "60" //3	. => uint8			push 1-byte value onto stack
+	PUSH2  = "61" //3	. => uint16			push 2-byte value onto stack
+	PUSH3  = "62" //3	. => uint24			push 3-byte value onto stack
+	PUSH4  = "63" //3	. => uint32			push 4-byte value onto stack
+	PUSH5  = "64" //3	. => uint40			push 5-byte value onto stack
+	PUSH6  = "65" //3	. => uint48			push 6-byte value onto stack
+	PUSH7  = "66" //3	. => uint56			push 7-byte value onto stack
+	PUSH8  = "67" //3	. => uint64			push 8-byte value onto stack
+	PUSH9  = "68" //3	. => uint72			push 9-byte value onto stack
+	PUSH10 = "69" //3	. => uint80			push 10-byte value onto stack
+	PUSH11 = "6A" //3	. => uint88			push 11-byte value onto stack
+	PUSH12 = "6B" //3	. => uint96			push 12-byte value onto stack
 	PUSH13 = "6C" //3	. => uint104		push 13-byte value onto stack
 	PUSH14 = "6D" //3	. => uint112		push 14-byte value onto stack
 	PUSH15 = "6E" //3	. => uint120		push 15-byte value onto stack
@@ -102,7 +102,7 @@ var (
 	PUSH30 = "7D" //3	. => uint240		push 30-byte value onto stack
 	PUSH31 = "7E" //3	. => uint248		push 31-byte value onto stack
 	PUSH32 = "7F" //3	. => uint256		push 32-byte value onto stack
-	DUP1   = "80" //3	a => a, a		clone 1st value on stack
+	DUP1   = "80" //3	a => a, a			clone 1st value on stack
 	DUP2   = "81" //3	_, a => a, _, a		clone 2nd value on stack
 	DUP3   = "82" //3	_, _, a => a, _, _, a		clone 3rd value on stack
 	DUP4   = "83" //3	_, _, _, a => a, _, _, _, a		clone 4th value on stack
