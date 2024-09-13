@@ -36,11 +36,19 @@ Go package seeking to replace solidity as a way of developing safe and secure sm
 
 type contractName contract {
 
-
         GO SYNTAXed CONTRACT
 
 }
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+example : 
+package main 
+
+type myToken contract {
+    event("eventName as first argument", ...)
+    emit("emitName as first argument", ...)
+
+    payable.Receive() 
+}
 
