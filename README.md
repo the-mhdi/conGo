@@ -2,17 +2,45 @@
 
 Go package seeking to replace solidity as a way of developing safe and secure smart contracts for EVM based blockchains. 
 
-syntax : 
-    keywords : 
-    called, emit, event, 
+    
+    syntax : 
+    
+~keywords:
+    called, 
+    emit,
+    event, 
+    name, string
+    metadata, = json,
+    by [address or list of addresses] 
 
-    address[type] -> address types = deployer, owner, user(white,black list)
+    address[type] -> address types = deployer, owner, user[allowed, restricted, blocked] , spender
+        
+        address_list_name := []address[allowed]{
 
-    IF(   ) {}
+        }
 
-    LOCK([lock logic])
-    UNLOCK([unlock logic])
 
-    {Logic syntax}
+    IF( condition ) {} -> example : if (fn() called by address_list_name) {do this stuff}
+
+
+
+    LOCK([lock logic]) //deposit token 
+    UNLOCK([unlock logic])  //withdrawal token
 
     CALL([function name])
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type contractName contract {
+
+
+        GO SYNTAXed CONTRACT
+
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
